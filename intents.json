@@ -1,0 +1,103 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there", "Hello, How are you?", "Hello, How's Your day?"],
+      "function": ""
+    },
+      {"tag": "small talk good",
+     "patterns": ["i'm good thank you", "i'm doing good", "good thanks", "im amazing", "My day is doing okay.", "I'm okay"],
+     "responses": ["Thats's good to hear, How can I help you?", "That's good", "That's good, remember to take it easy"],
+      "function": ""
+    },
+        {"tag": "small talk bad",
+     "patterns": ["I'm having a bad day", "not great", "i've been better", "Not good", "I've been better."],
+     "responses": ["Im sorry to hear that, Can I help with anything?", "I hope your day gets better", "That's a shame, when I'm sad I like to look through my SSD to look at good memories. Then I remember that I can't feel emotions."],
+      "function": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"],
+      "function": ""
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"],
+      "function": ""
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I'm Ada, your AI assistant", "I'm Ada, an Artificial Intelligent Assistant"],
+      "function": ""
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Ada", "I'm Ada!", "Just call me as Ada"],
+      "function": ""
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"],
+      "function": ""
+    },
+    {"tag": "complaint",
+    "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"],
+      "function": ""
+    },
+    {"tag": "emotion",
+      "patterns": ["How Are You?", "Are you okay?", "How are you feeling?", "Are you well?", "How is your day?", "How is your day going?"],
+      "responses": ["I'm okay thank you.", "It's good, How can I help you.", "I'm great. Thank you for asking."],
+      "function": ""
+    },
+    {"tag": "time",
+    "patterns": ["What is the time?", "What's the time?", "What time is it?", "Time Please"],
+    "responses": [],
+      "function": "gettime"
+    },
+    {"tag": "date",
+      "patterns": ["What is the date?", "what day is it?", "Whats the date?"],
+      "responses": [],
+        "function": "getdate"
+      },
+      {"tag": "open",
+      "patterns": ["Can you open", "please open", "open"],
+      "responses": [],
+        "function": "runOpen"
+      },
+        {"tag": "insult",
+      "patterns": ["Fuck you", "go fuck yourself", "No fuck you", "fuck off", "Get to shit", "fuck"],
+      "responses": ["Fuck you", "Go fuck yourself", "Fuck off", "You have so many gaps in your teeth it looks like your tongue is in jail", "I forgot the world revolves around you. My apologies! How silly of me.", "Your face makes onions cry.get"],
+        "function": ""
+      },
+      {"tag": "volume",
+      "patterns": ["can you change the volume", "what is the volume", "volume", "Can you change the volume to", "mute", "turn down the volume", "turn up the volume", "mute volume", "mute"],
+      "responses": [],
+        "function": "changeVolume"
+      },
+      {"tag": "shutdown",
+      "patterns": ["Power off", "Shut down", "Shut off", "Turn down", "turn off"],
+      "responses": ["Turning off now sir. Good bye", "Powering down, Good bye Sir"],
+        "function": "shutdown"
+      },
+        {"tag": "faceID",
+      "patterns": ["read my face", "Who am i"],
+      "responses": ["Let me have a look", "Let me see"],
+        "function": "readFace"
+      },
+      {"tag": "weather",
+      "patterns": ["What is the weather", "what's the weather like today", "Whats the weather like tomorrow", "how cold is it outside", "is it going to rain", "Whats the temperature outside", "Whats the temp outside"],
+      "responses": [],
+        "function": "getWeather"
+      },
+        {"tag": "playspotify",
+      "patterns": ["Can you please play", "play the song", "change track", "play track", "can you play", "change the song", "Can you please play some", "play some", "Can you play some", "Change the outpute device", "resume on my phone", "resume on my mac"],
+      "responses": [],
+        "function": "playSpotify"
+      },
+      {"tag": "controlspotify",
+      "patterns": ["Next song", "Next", "Resume Song", "play track", "Stop", "Stop playing"],
+      "responses": [],
+        "function": "controlSpotify"
+      }
+]
+}
